@@ -45,6 +45,7 @@
 
         $('input').keyup(function (e) {
             const valor = $(this).val()
+            // compreendido na RegExp
             if (valor.match(/#[\da-fA-F]{3,6}/)) {
                 $('body').css('background-color', valor)
             } else {
